@@ -376,6 +376,7 @@ public class SqlSamples
             dataRow["FirstName"] = $"FirstName {i}";
             dataRow["LastName"] = $"LastName {i}";
             names.Rows.Add(dataRow);
+          //  names.Rows.Add(new object {"fi"})
         }
         sqlBulkCopy.WriteToServer(names);
         stopwatch.Stop();
